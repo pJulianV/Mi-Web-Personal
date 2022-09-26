@@ -7,30 +7,40 @@
     <title>Julian V</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icons8-bookmark-64.png">
+    
 
     <!-- <link rel="stylesheet" href ="https:\\www.sitioweb\styles.css"> -->
 </head>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.
+min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.
+min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
+min.js"></script>
 <script type="text/javascript">
-function retornarLienzo(x) {
-  var canvas = document.getElementById(x);
-  if (canvas.getContext) {
-    var lienzo = canvas.getContext("2d");   
-    return lienzo;
-  } else
-    return false;
-}
 
-function dibujar() {
-  var lienzo=retornarLienzo("lienzo1");
-  if (lienzo) {
-    lienzo.fillStyle="rgb(255,0,0)";
-    lienzo.fillRect(10,10,50,50);
-    lienzo.fillStyle="rgba(0,255,0,0.3)";
-    lienzo.fillRect(40,40,50,50);
-  }
-}
+    function retornarLienzo(x) {
+    var canvas = document.getElementById(x);
+    if (canvas.getContext) {
+        var lienzo = canvas.getContext("2d");   
+        return lienzo;
+    } else
+        return false;
+    }
 
+    function dibujar() {
+    var lienzo=retornarLienzo("lienzo1");
+    if (lienzo) {
+        lienzo.fillStyle="rgb(255,0,0)";
+        lienzo.fillRect(10,10,50,50);
+        lienzo.fillStyle="rgba(0,255,0,0.3)";
+        lienzo.fillRect(40,40,50,50);
+    }
+    }
 </script>
 <header>
 </header>
@@ -52,6 +62,20 @@ function dibujar() {
              playlist con flechas a los laterales para mostrar las siguiente y anteriores 3 
              playlist
     -->
+    <!-- TODO: Establece para que cada etiqueta
+        h1 => Titulo unico de pagina (1 por sitio, osea por secciones aparte) 
+        h3 => Para los titulos de tematicas de los indices
+        h4 => Para los items del indice a otras partes
+        p => Parrafos e informacion mas detallada de los indices (Que cuando te acerques te muestre que significa (Como en wikipedia y definiciones dentro de una definicion))
+        TODO: Agrega un apartado de sugerencias que se vera afectado por lo siguientes
+        * Cuanto entrar a una seccion
+        * Que tanto miras y abres los links o contenido de esa seccion
+        * Hace cuanto que la viste y repetirla los suficiente para lo olvidarla tan facilmente 
+        * Ejem Hace un mes que no ves videos sobre desarrollo o toma de decisiones, quiere ver el siguiente video?
+        TODO: Ordena este contenido dependiendo de su importancia primero estaria por ejemplo Finanzas personales, carrera, desiciones o gestion emocional que  libros que quiero leer
+    -->
+
+    <section><p>Seccion para favoritos o mas usados</p></section>
     <div id="musica" >
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3Ww8GMbCDMAGwJJ2hd7z7z?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4ql0bVq1m5ao?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -60,13 +84,26 @@ function dibujar() {
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3PhoLpVuITZKcymswpck5b?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div id="construccionWebPersonal">
         <h2>Construccion Web Personal</h2>
+        <p><a href="https://icons8.com">Favicons, icons and images</a></p>
+        <p><a href="https://uniwebsidad.com/libros/bootstrap-3">Bootstrap 3 - El manual oficial - Uniwebsidad</a></p>
+        <p><a href="https://getbootstrap.com/docs/4.0/components/dropdowns/">Bootstrap - GetBootstrap "Wiki Oficial"</a></p>
+        <p><a href="https://getbootstrap.com">BootsTrap - Pagina Oficalz</a></p>
+        <p><a href="https://eloquentjavascript.net">Libro - JavaScript Eloquente </a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Todo Lo Que Necesitas de JavaScript - Dev Mozilla</a></p>
+        <p><a href="https://developer.mozilla.org/es/docs/Web/HTML">Todo Lo Que Necesitas de HTML - Dev Mozilla</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Todo Lo Que Necesitas de CSS - Dev Mozilla</a></p>
         <p><a href="https://www.parkerklein.com">Dani - Inspiracion para mi Sitio Web Personal</a></p>
         <p><a href="https://portafolio-axel.netlify.app">Axel - Inspiracion para mi Sitio Web Personal</a></p>
         <p><a href="https://colorhunt.co/palette/182747562b08647e68d8d8d8">Color Hunt - Paleta de Colores</a></p>
+        <p><a href="https://github.com/pJulianV/My-Web-Site">Web Antigua - Ver codigo</a></p>
         <p><a  href="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Como Usar "HTML"</a></p>
         <!-- * En las etiquetas puedes hacer css asi style="color:#66ad5f;" o style="border-radius:12px" pero es mejor hacerlos en el css propio-->
         <p><a href="https://fonts.google.com">Fuentes</a></p>        
-        <p><a style="color:#66ad5f;" href="inversionesyFinanzasPersonales.html">Inversiones y Finanzas Personales</a> </p>
+        <p>
+            <a       href="html/inversionesyFinanzasPersonales.html">Inversiones y Finanzas Personales</a>
+            <!-- ^ -->
+        <!-- style="color:#66ad5f;" -->
+         </p>
         <p><a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a></p>
         <p><a href="https://www.tutorialesprogramacionya.com/cssya/">Tutoriales Programacion Ya - CSS</a></p>
     </div>
@@ -89,6 +126,7 @@ function dibujar() {
         <h2><a href="https://survey.stackoverflow.co/2022/#section-learning-to-code-learning-how-to-code">Como aprender a programar?</a></h2>
         <h2>Cursos</h2>
         <ul>
+            <li><a href="https://www.aluracursos.com">Alura Latam</a></li>
             <li><a href="https://www.udemy.com/course/python-sin-fronteras-html-css-mysql">Python sin fronteras HTML, CSS y MySQL</a></li>
             <li><a href="https://apps.co/portal/Secciones/Cursos-virtuales/">Conoce los cursos virtuales gratuitos de APPS.CO: hay 24 disponibles</a></li>
             <li><a href="https://www.coursera.org/professional-certificates/meta-front-end-developer?utm_source=recommendations&utm_medium=email&utm_campaign=15333&sfmc_id=100277693&sfmc_key=0038W00001WLgiBQAT">Coursera - Frontend Certified - Meta</a></li>
@@ -105,7 +143,7 @@ function dibujar() {
         <h2><a href="https://www.canva.com/design/DAFLZ9dnrnk/TXh-LE3UFwGM-TdluQWx0g/edit?layoutQuery=cv">CV Prototipo</a></h2>
         <h2>Roadmaps</h2>
         <h3><a href="https://roadmap.sh">Roadmaps Para Todo Tipo de Desarrollador - GitHub</a></h3>
-        <img src="imagenes/Roadmap.sh.png" alt="Roadmap.sh">
+        <img src="img/Roadmap.sh.png" alt="Roadmap.sh">
         <h2>CS</h2>
         <h2><a href="https://github.com/ossu">OSSU</a></h2>
         <h2>Programacion Competitiva</h2>
@@ -117,7 +155,8 @@ function dibujar() {
         <h2><a href="https://www.tzuzulcode.com/bootcamp/pricing">Tzuzul Code</a></h2>
         <h2><a href="https://campus.open-bootcamp.com">Open Bootcamp</a></h2>
         <h2>Packs de recursos - Aprender Programacion</h2>
-
+        <p><a href="https://uniwebsidad.com/libros">Libros - Programacion, Diseño y Desarrollo Web</a></p>
+        <p><a href="https://www.tutorialesprogramacionya.com/cssya/bootstrapya/">Programacion Ya! - BootsTrap</a></p>
         <h3><a href="https://www.reddit.com/r/learnprogramming/wiki/faq/">Reddit - Learn Programming Faq</a></h3>
         <h3><a href="https://www.reddit.com/r/learnprogramming/new/">Reddit - Learn Programming</a></h3>
         <h3><a href="https://twitter.com/letibarrios20/status/1556718278587957250?t=uDSf5dpoMZ0HCOkzrEs7ow&s=08">Recursos para Apreder Programacion</a></h3>
@@ -133,17 +172,21 @@ function dibujar() {
         <h2>Desarrollo Web</h2>
         <h3><a href="roadmaps.html">roadmaps</a></h3>
         <h3><a href="apis.html">APIS</a></h3>
-        <h3><a href="https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/3-terrarium/1-intro-to-html/README.md">
-            Web-Dev-For-Beginners - Microsoft-GitHub</a></h3>
+        <h3><a href="https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/3-terrarium/1-intro-to-html/README.md">Web-Dev-For-Beginners - Microsoft-GitHub</a></h3>
+        <p><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=es">Guía de optimización en buscadores (SEO) para principiantes</a></p>
         <p><a href="https://developers.google.com/search?hl=es-419">Centro de Busqueda de Google Marketing, Desarrolladores y SEO </a></p>
+        <h2></h2>
         <h2>Empresas</h2>
         <h3><a href="www.accenture.com">Accenture</a></h3>
         <p>! Deberias visitar empresas y centros de desarrollo y programacion en Bogota</p>
         <h3>Conceptos</h3>
         <p>Time Complexity Merge Sort</p>
         <img src="img/timecom.png" alt="diagrama timecom">
+        <p><a href="https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=es">Guía de optimización en buscadores (SEO) para principiantes</a></p>
+        <br>
         <h2><a href="principios.html">Principios</a></h2>
-        
+        <h3>Bootstrap</h3>
+        <p><a href="https://dinahosting.com/blog/bootstrap-que-es-como-instalarlo-y-ejemplos-de-uso/">BootsTrap - Como instalar y ejemplos de uso</a></p>
     </section>
 
     <h2>Mis Estrategias</h2>
@@ -182,7 +225,18 @@ function dibujar() {
     <a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/">SofiaPlus</a> 
     <a href="https://app.becas-santander.com/en/program/search?category=TECH&status=open">Becas Santander</a>
     <a href="https://www.qs.com">Estudiar en el exterior</a>
-
+    <a href="https://www.aluracursos.com">Altura Latam</a>
+    <h3>Oportunidades - Empleo Como Desarrollador</h3>
+    <a href="https://torre.co/?r=RyD1xYLI">Torre.co</a>
+    <a href="https://www.talentpitch.co">TalentPith</a>
+    <p>"Videos de Mision Tic de Septiembre en YouTube - Empresas Invitadas"</p>
+    <a href="https://www.scotiabank.com/global/es/scotiatech.html">Scotia</a>
+    <ul>
+        <li><a href="https://www.scotiabank.com/careers/en/careers/careers-students-and-new-grads/velocity-technology-development-program-for-interns-and-co-ops.html">Scotia - Velocity: Para Internos</a></li>
+    </ul>
+    <h2>Mundo laboral</h2>
+    <h3><a href="https://career4.successfactors.com/portalcareer?company=MercadoP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=H9yx4377nFk0eZvnC0M8b1qe3RjVvWxz8sbe1ocYxpU%3d#sfPanelHeaderAnchor_224_">Oportunidades de Carrera en Mercado Libre</a></h3>
+    
     <h2>Aprender General</h2>
     <a href="https://brilliant.org/welcome/#goal_page_variant">Brilliant</a>
     <a href="https://www.khanacademy.org">KhanAcademy</a>
@@ -211,17 +265,15 @@ function dibujar() {
     <h3><a href="https://www.worldpackers.com/es/search/north_america">World Packers - Northamerica - Viaja y Ayuda</a></h3>
     <h3><a href="https://www.cambly.com/?lang=en">Cambly - Rempl</a></h3>
 
-    <h2>Mundo laboral</h2>
-    <h3><a href="https://career4.successfactors.com/portalcareer?company=MercadoP&career_ns=job_listing_summary&navBarLevel=JOB_SEARCH&_s.crb=H9yx4377nFk0eZvnC0M8b1qe3RjVvWxz8sbe1ocYxpU%3d#sfPanelHeaderAnchor_224_">Oportunidades de Carrera en Mercado Libre</a></h3>
-    
     <h2>Mindfulness</h2>
     <h3>Responder a las preguntas que tu mente te hace o hacerte preguntas puede ser muy util para establecer objetivos, resolver problemas y </h3>
-
+    
     <h2>Redes Sociales Que Me Interesan</h2>
     <ul>
         <li><a href="https://drive.google.com/drive/my-drive?ths=true">Drive Principal - pjuliand</a></li>
         <li>Twitter</li>
         <li>Discord</li>
+        <li><a href="https://www.linkedin.com">LinkedIn</a></li>
         <li><a href="https://medium.com">Medium</a></li>
         <li><a href="https://slack.com">Slack</a></li>
         <li>
@@ -264,7 +316,7 @@ function dibujar() {
         <li><a href="https://www.reddit.com/r/kurzgesagt_meetup/comments/x6j5si/kurzgesagt_meetup_starting_guide_start_here/">Kurzgesagt Guide - Reddit</a></li>
         <li><a href="https://discord.com/invite/kurzgesagt">Discord Kurzgesagt - Estas en Kurzgesagt Bogota</a></li>
     </ul>
-
+    
     <div id>
         <h3>Marketing</h3>
         <ul>
@@ -308,7 +360,8 @@ function dibujar() {
 
     <h2>Otras Playlist</h2>
     <h3><a href="https://www.youtube.com/watch?v=q1wxYd6LCpo&list=PLxJjbtbdu3yE13eHbW53-yBi4Xpn_a2hf">Playlist - "Amy - Hace mi vida mas facil"</a></h3>
-    </div>
+</div>
+
 
 </body>
 <footer></footer>

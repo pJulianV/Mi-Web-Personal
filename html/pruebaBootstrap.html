@@ -1,0 +1,243 @@
+Elementos Bootstrap
+
+Containers: sirven para crear una “caja” o “contenedor”
+sobre la que va el contenido de una página web.
+• Cuando le aplicas a un elemento HTML la clase container
+lo que ocurre es que a ese elemento se le aplica un ancho y
+un padding determinado y además se coloca en el centro
+de la página web.
+Ejemplo:
+<div class="container">
+<p>
+Este párrafo va dentro de un container
+</p>
+</div>
+Elementos Bootstrap
+• columnas: Para crear columnas, se debe crear un
+elemento HTML padre (<Div>) con la etiqueta row. Esta
+etiqueta le dice a Bootstrap que el contenido se va
+representar en columnas.
+• Bootstrap se basa en un sistema de 12 columnas, es decir,
+teniendo 12 columnas en total, si quieres crear dos
+columnas de igual tamaño, tienes que crear 2 columnas de
+6. Si quieres 3 columnas tienes que crear 3 columnas de 4
+porque 3 * 4 = 12 columnas en total.
+• Para crear columnas tienes que usar la clase col, seguido
+de otra clase con el ancho que se dedea del 1 al 12, por
+ejemplo: col-6, col-3, col-2, etc.
+Elementos Bootstrap
+Ejemplo creado dos columnas de igual tamaño:
+<div class="container">
+<div class="row">
+<div class="col col-6">
+Primera columna
+</div>
+<div class="col col-6">
+Segunda columna
+</div>
+</div>
+</div>
+Elementos Bootstrap
+Ejemplo con columnas de diferente tamaño:
+<div class="container">
+<div class="row">
+<div class="col col-2">
+Primera columna más pequeña
+</div>
+<div class="col col-6">
+Segunda columna mucho más grande que las otras
+</div>
+<div class="col col-2">
+Tercera columna más pequeña
+</div>
+</div>
+</div>
+Elementos Bootstrap
+Ejemplo con columnas de igual tamaño:
+<div class="container">
+<div class="row">
+<div class="col">
+1 of 2
+</div>
+<div class="col">
+1 of 2
+</div>
+</div>
+<div class="row">
+<div class="col">
+1 of 3
+</div>
+<div class="col">
+1 of 3
+</div>
+<div class="col">
+1 of 3
+</div>
+</div>
+</div>
+Elementos Bootstrap
+• El ancho de una columna para cierto dispositivo tienes los
+siguientes valores:
+• xs ancho de pantalla de más de 576px
+• sm ancho de pantalla de más de 768px
+• md ancho de pantalla de más de 992px
+• lg ancho de pantalla de más de 1200px
+Elementos Bootstrap
+• Botones: Para crear un botón se debe usar la clase btn.
+<!-- Botón standart -->
+<button type="button" class="btn btn-default">Default</button>
+<!-- Botón primario -->
+<button type="button" class="btn btn-primary">Primary</button>
+<!-- Botón de éxito-->
+<button type="button" class="btn btn-success">Success</button>
+Elementos Bootstrap
+<!-- Botón de información-->
+<button type="button" class="btn btn-info">Info</button>
+<!-- Botón de aviso -->
+<button type="button" class="btn btn-warning">Warning</button>
+<!-- Botón de peligro-->
+<button type="button" class="btn btn-danger">Danger</button>
+<!-- Botón con énfasis en un link-->
+<button type="button" class="btn btn-link">Link</button>
+Elementos Bootstrap
+• Alertas: Las alertas sirven para mostrar un mensaje al usuario.
+<div class="alert alert-primary" role="alert">
+Mensaje de la alerta
+</div>
+<div class="alert alert-secondary" role="alert">
+Mensaje de la alerta
+</div>
+<div class="alert alert-success" role="alert">
+Mensaje de la alerta
+</div>
+Elementos Bootstrap
+<div class="alert alert-danger" role="alert">
+Mensaje de la alerta
+</div>
+<div class="alert alert-warning" role="alert">
+Mensaje de la alerta
+</div>
+<div class="alert alert-info" role="alert">
+Mensaje de la alerta
+</div>
+Elementos Bootstrap
+<div class="alert alert-light" role="alert">
+Mensaje de la alerta
+</div>
+<div class="alert alert-dark" role="alert">
+Mensaje de la alerta
+</div>
+Elementos Bootstrap
+• Breadcrumbs: Los breadcrubs o migas de pan, sirven para mostrar
+la situación del usuario dentro de una página. Indica al usuario
+dónde está y de dónde viene.
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+<li class="breadcrumb-item"><a href="#">Sección</a></li>
+<li class="breadcrumb-item active" aria-current="page">Sección
+actual</li>
+</ol>
+</nav>
+Elementos Bootstrap
+• Cards: Las cards o tarjetas, sirven para agrupar el contenido. Se
+suelen utilizar para crear listas de elementos, por ejemplo, artículos
+de blog, tweets, colecciones de elementos, etc.
+<div class="card" style="width: 18rem;">
+<div class="card-body">
+<h5 class="card-title">Título de la tarjeta</h5>
+<h6 class="card-subtitle mb-2 text-muted">Subtítulo</h6>
+<p class="card-text">Contenido de la tarjeta</p>
+<a href="#" class="card-link">Enlace 1</a>
+<a href="#" class="card-link">Enlace 2</a>
+</div>
+</div>
+Elementos Bootstrap
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+<div class="card-header">Header</div>
+<div class="card-body text-primary">
+<h5 class="card-title">Tarjeta con borde</h5>
+<p class="card-text">Sontenido de la tarjeta</p>
+</div>
+</div>
+Elementos Bootstrap
+<div class="card text-right" style="width: 18rem;">
+<div class="card-body">
+<h5 class="card-title">Tarjeta con alineación a la derecha</h5>
+<p class="card-text">Contenido alineado a la derecha</p>
+<a href="#" class="btn btn-primary">Botón dentro de la tarjeta</a>
+</div>
+</div>
+Elementos Bootstrap
+• Collapse: Este elemento sirve para moder añadir un botón cuya
+funcionalidad sea poder ocular y mostrar cierto contenido, es decir,
+crear elementos colapsables.
+<button class="btn btn-primary" type="button" data-toggle="collapse"
+data-target="#collapseExample" aria-expanded="false" ariacontrols="collapseExample">
+Haz clic para mostrar y ocultar el contenido
+</button>
+<div class="collapse" id="collapseExample">
+<div class="card card-body">
+Dentro de esta etiqueta puedes añadir todo el contenido que quieres que
+se muestre al pulsar el botón
+</div>
+</div>
+Elementos Bootstrap
+• Dropdowns: Los dropdowns o multiselect, sirven para que el
+usuario pueda escoger una opción para un conjunto de
+posibilidades.
+<div class="dropdown">
+<button class="btn btn-primary dropdown-toggle" type="button"
+id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+aria-expanded="false">
+Selecciona una opción
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<a class="dropdown-item" href="#">Opción 1</a>
+<a class="dropdown-item" href="#">Opción 2</a>
+<a class="dropdown-item" href="#">Opción 3</a>
+</div>
+
+</div>
+
+Elementos Bootstrap
+• Modal: Los popups son ventanas emergentes que se abren cuando
+el usuario interacciona con cierto elemento de uan página como un
+botón o un enlace.
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+
+    Abrir popup
+
+</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+
+aria-hidden="true">
+
+<div class="modal-dialog" role="document">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h5 class="modal-title" id="exampleModalLabel">Título del popup</h5>
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+            Contenido del popup
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Acción principal</button>
+        </div>
+    </div>
+</div>
+</div>
