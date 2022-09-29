@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/icons8-bookmark-64.png">
+    <script src="js/webpersonal.js"></script>
     
-
     <!-- <link rel="stylesheet" href ="https:\\www.sitioweb\styles.css"> -->
+
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.
@@ -21,30 +22,10 @@ min.js"></script>
 min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.
 min.js"></script>
-<script type="text/javascript">
-
-    function retornarLienzo(x) {
-    var canvas = document.getElementById(x);
-    if (canvas.getContext) {
-        var lienzo = canvas.getContext("2d");   
-        return lienzo;
-    } else
-        return false;
-    }
-
-    function dibujar() {
-    var lienzo=retornarLienzo("lienzo1");
-    if (lienzo) {
-        lienzo.fillStyle="rgb(255,0,0)";
-        lienzo.fillRect(10,10,50,50);
-        lienzo.fillStyle="rgba(0,255,0,0.3)";
-        lienzo.fillRect(40,40,50,50);
-    }
-    }
-</script>
 <header>
 </header>
 <body>
+    
     <h1>Musica</h1> 
     <!--
         TODO: Enlazar a sitios externos, y poder regresar al inicio desde alli 
@@ -79,9 +60,10 @@ min.js"></script>
         TODO: Agregar blog y cajas para llenar artucilos para eso blog
         TODO: Hacer 3 cajas para tareas tipo JIRA (Y otras funcionalidades de organizacion de tiempo/tareas y de otras pagians de ese tipo)
     -->
-
+    <h3>Aun no es resposive °~°</h3>
     <p>Lo mas importante, urgente o util arriba, secciones iran por orden de relevancia, siendo lo primero los mas importante y lo ultimo lo que no es tan importante</p>
     <section><p>Seccion para favoritos o mas usados</p></section>
+    <p onclick = "suma()">No de clik aqui</p>
     <div id="musica" >
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/3Ww8GMbCDMAGwJJ2hd7z7z?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1E4ql0bVq1m5ao?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -349,6 +331,8 @@ min.js"></script>
         <li><a href="https://www.youtube.com/watch?v=zilvOn4Qg7g&list=PL6P5uzFjk3n-5DlBJiXRsENyrSvpwoJhX&index=1">Playlist Habilidades Sociales</a></li>
         <li><a href="https://www.reddit.com/r/kurzgesagt_meetup/comments/x6j5si/kurzgesagt_meetup_starting_guide_start_here/">Kurzgesagt Guide - Reddit</a></li>
         <li><a href="https://discord.com/invite/kurzgesagt">Discord Kurzgesagt - Estas en Kurzgesagt Bogota</a></li>
+        <li><a href="https://www.reddit.com/r/kurzgesagt/comments/x7bgty/why_you_are_lonely_and_how_to_make_friends/">WHY YOU ARE LONELY AND HOW TO MAKE FRIENDS
+</a></li>
     </ul>
     
     <div id>

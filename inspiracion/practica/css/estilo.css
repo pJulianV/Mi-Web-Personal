@@ -1,0 +1,26 @@
+h1{
+        	color: blue;
+        	padding-left: 11em;
+        	font-family: Tahoma,'Time new roman';
+        	background-color:#F96666;
+        }
+
+        p{
+           font-family: Arial;
+           text-align: justify;
+           font-size: 48;
+
+        }
+        .subtitulo{
+        	color: blue;
+        	padding-left: 0em;
+        	background-color: black;
+        }
+        #monedas{
+        	color: red;
+        	font-size: 12;
+        	font-family: Tahoma;
+        }
+        p, b,ul{
+        	color: red;
+        }
