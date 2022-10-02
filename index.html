@@ -60,7 +60,18 @@ min.js"></script>
         TODO: Agregar blog y cajas para llenar artucilos para eso blog
         TODO: Hacer 3 cajas para tareas tipo JIRA (Y otras funcionalidades de organizacion de tiempo/tareas y de otras pagians de ese tipo)
     -->
-    <h3>Aun no es resposive °~°</h3>
+    <h3 id="titulo3">Aun no es resposive °~°</h3>
+    <p id="paletaColores">Esta es la paleta de colores que se usaron</p>
+    <button onclick="changeColor('rgb(34, 87, 126)')">Azul Oscuro</button>
+    <button onclick="changeColor('rgb(85, 132, 172)')">Azul Mar</button>
+    <button onclick="changeColor('rgb(149, 209, 204)')">Celeste</button>
+    <button onclick="changeColor('rgb(250, 255, 175)')">Amarillo</button>
+        <script>
+            function changeColor(newColor) {
+                var elem = document.getElementById("paletaColores");
+                elem.style.color = newColor;
+            }
+        </script>
     <p>Lo mas importante, urgente o util arriba, secciones iran por orden de relevancia, siendo lo primero los mas importante y lo ultimo lo que no es tan importante</p>
     <section><p>Seccion para favoritos o mas usados</p></section>
     <p onclick = "suma()">No de clik aqui</p>
