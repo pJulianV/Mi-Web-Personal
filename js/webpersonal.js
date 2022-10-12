@@ -46,3 +46,8 @@ function saludo(edad, genero){
         alert("D:<")
     }
 }
+
+function changeColor(newColor) {
+    var elem = document.getElementById("paletaColores");
+    elem.style.color = newColor;
+}
